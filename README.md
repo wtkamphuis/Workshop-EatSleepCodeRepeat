@@ -5,16 +5,20 @@
 * Open the solution in Visual Studio (The solution should compile without errors)
 
 ## Lab 1: Configuring a CI pipeline
+
 * Go to the website of [AppVeyor](https://appveyor.com) and log in with your GitHub account.
 * Add the Workshop-EatSleepCodeRepeat project.
 * The project should start building without any further configuration --> The build will fail due to a failing unit test.
-
-* Go to Visual Studio and implement the missing functionality in the Calculator class and make the unit test pass.
+* Go to Visual Studio and create a new branch (example: fix multiply unit test)
+* Implement the missing functionality in the Calculator class and make the unit test pass.
 * Commit your local changes (git add *, git commit -m "your comment here").
-* Push the changes to your Github repository (git push).
-
-* The AppVeyor CI should queue a build for the new commit that now succeeds.
+* Push the changes to your Github repository (git push, or Publish the branch in Visual Studio).
+* Open a Pull Request in GitHub or create Pull Request in Visual Studio. 
+* The AppVeyor CI should queue a build for the new Pull Request that now succeeds.
+* Merge the Pull Request if the build passes.
 * Optional: Add the Appveyor Badge to this README.MD file.
+* Optional: Protect the master branch to ensure that failing builds can not be merged to master.
+
 
 ## Lab 2: Use BetterCodeHub to find refactoring candidates
 * Go to [BetterCodeHub.com](https://bettercodehub.com) and log in with your GitHub account.
@@ -22,7 +26,7 @@
 * Refactor the code in Visual Studio Lab2 to comply with the first three guidelines.
 * Commit and push your changes to GitHub after refactoring
 * Run the analysis in BetterCodeHub.com --> The project should now comply to 9 of the 10 guidelines.
-* Send a pull request with your version of the refactoring
+* Send a pull request to the BetterCodeHub repository with your version of the refactoring
 
 ## Lab 3: Use BetterCodeHub to find refactoring candidates
 Similar to Lab 2:
